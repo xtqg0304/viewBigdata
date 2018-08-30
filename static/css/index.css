@@ -1,0 +1,459 @@
+/*项目样式*/
+html {
+  font-size: 100%;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+  min-width: 100%;
+  overflow: hidden;
+}
+body {
+  /* background-color: #000525; */
+  background: linear-gradient(to bottom, #10204a 0%, #12234f 100%);
+  background-size: 100% 100%;
+  font-family: 'Microsoft YaHei', '微软雅黑';
+  overflow: hidden;
+  overflow-y: scroll;
+
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.dataVisual-wrap {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 20;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+.dataVisual-wrap .title {
+  width: 100%;
+  padding-top: 9%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  background: url(../img/logo2.png) no-repeat center top;
+  background-size: 100% auto;
+  -webkit-background-size: 100% auto;
+}
+
+.dataVisual-con {
+  padding: 0;
+  margin-top: 9%;
+  /* margin: 0 -0.5em; */
+  list-style: none;
+  overflow: hidden;
+  float: left;
+}
+/* .dataVisual-con-left {
+  width: 35%;
+  margin-top: 4%;
+}
+.dataVisual-con-left .dataVisual-item-t {
+  padding-bottom: 120%;
+}
+.dataVisual-con-center {
+  width: 30%;
+}
+.dataVisual-con-center li:first-child .dataVisual-item-t {
+  padding-bottom: 45%;
+}
+.dataVisual-con-center li:nth-child(2) .dataVisual-item-t {
+  padding-bottom: 75%;
+}
+.dataVisual-con-right {
+  width: 35%;
+  margin-top: 4%;
+}
+.dataVisual-con-right li:first-child .dataVisual-item-t {
+  padding-bottom: 20%;
+}
+.dataVisual-con-right li:nth-child(2) .dataVisual-item-t {
+  padding-bottom: 86%;
+} */
+.dataVisual-item {
+  display: inline-block;
+  min-width: 100px;
+  width: calc(100% - 1em);
+  /* margin: 20px 0.5em 0; */
+  margin: 0 0.5em 0.5em 0.5em;
+  /* background: AppWorkspace; */
+  vertical-align: top;
+}
+
+.dataVisual-item-t {
+  padding-bottom: 72%;
+  position: relative;
+}
+
+.dataVisual-item-t > div.dataVisual-bgImg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /* background: #073954; */
+}
+@media screen and (max-width: 1920px) {
+  .dataVisual-con-left {
+    width: 30%;
+  }
+  .dataVisual-con-center {
+    width: 40%;
+  }
+  .dataVisual-con-right {
+    width: 30%;
+  }
+  body {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 1680px) {
+  .dataVisual-con-left {
+    width: 35%;
+  }
+  .dataVisual-con-center {
+    width: 30%;
+  }
+  .dataVisual-con-center .dataVisual-item-t {
+    padding-bottom: 109%;
+  }
+  .dataVisual-con-right {
+    width: 35%;
+  }
+  body {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .dataVisual-item-t {
+    padding-bottom: 72%;
+  }
+  .dataVisual-con-left {
+    width: 35%;
+  }
+  .dataVisual-con-center {
+    width: 30%;
+  }
+  .dataVisual-con-center .dataVisual-item-t {
+    padding-bottom: 109%;
+  }
+  .dataVisual-con-right {
+    width: 35%;
+  }
+  body {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .dataVisual-con-left {
+    width: 35%;
+  }
+  .dataVisual-con-center {
+    width: 30%;
+  }
+  .dataVisual-con-center .dataVisual-item-t {
+    padding-bottom: 109%;
+  }
+  .dataVisual-con-right {
+    width: 35%;
+  }
+  body {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .dataVisual-con-left {
+    width: 35%;
+  }
+  .dataVisual-con-center {
+    width: 30%;
+  }
+  .dataVisual-con-right {
+    width: 35%;
+  }
+  body {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .dataVisual-con-left {
+    width: 30%;
+  }
+  .dataVisual-con-center {
+    width: 40%;
+  }
+  .dataVisual-con-right {
+    width: 30%;
+  }
+  body {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .dataVisual-con-left {
+    width: 30%;
+  }
+  .dataVisual-con-center {
+    width: 40%;
+  }
+  .dataVisual-con-right {
+    width: 30%;
+  }
+  body {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dataVisual-con-left {
+    width: 100%;
+    padding-top: 3%;
+  }
+  .dataVisual-con-center {
+    width: 100%;
+    padding-top: 0%;
+  }
+  .dataVisual-con-right {
+    width: 100%;
+    padding-top: 0%;
+  }
+  .dataVisual-wrap .title {
+    width: 50%;
+    left: 25%;
+    padding-top: 8%;
+  }
+  body {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .dataVisual-con-left {
+    width: 100%;
+    padding-top: 6%;
+  }
+  .dataVisual-con-center {
+    width: 100%;
+  }
+  .dataVisual-con-right {
+    width: 100%;
+  }
+  .dataVisual-wrap .title {
+    width: 70%;
+    left: 15%;
+    padding-top: 10%;
+  }
+  body {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .dataVisual-con-left {
+    width: 100%;
+    padding-top: 6%;
+  }
+  .dataVisual-con-center {
+    width: 100%;
+  }
+  .dataVisual-con-right {
+    width: 100%;
+  }
+  .dataVisual-wrap .title {
+    width: 70%;
+    left: 15%;
+    padding-top: 10%;
+  }
+  body {
+    font-size: 1rem;
+  }
+}
+/*css 背景边框*/
+.numbox {
+  border: #163365 solid 1px;
+  position: relative;
+}
+.numbox .line {
+  position: absolute;
+  background-color: #377cac;
+}
+.numbox .line.m {
+  -webkit-animation: move 10s linear infinite;
+  -moz-animation: move 10s linear infinite;
+  -ms-animation: move 10s linear infinite;
+  -o-animation: move 10s linear infinite;
+}
+.numbox .line.x {
+  width: 6px;
+  height: 2px;
+}
+.numbox .line.y {
+  width: 2px;
+  height: 6px;
+}
+.numbox .line.t {
+  top: -1px;
+}
+.numbox .line.b {
+  bottom: -1px;
+}
+.numbox .line.l {
+  left: -1px;
+}
+.numbox .line.r {
+  right: -1px;
+}
+.numbox .numb {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+@keyframes move {
+  0% {
+    top: -1px;
+    left: 0;
+    width: 6px;
+    height: 2px;
+  }
+  40% {
+    top: -1px;
+    left: 95%;
+    width: 6px;
+    height: 2px;
+  }
+  40.001% {
+    left: auto;
+    right: -1px;
+    width: 2px;
+    height: 6px;
+  }
+  50% {
+    left: auto;
+    right: -1px;
+    width: 2px;
+    height: 6px;
+    top: 95%;
+  }
+  50.001% {
+    top: auto;
+    bottom: -1px;
+    width: 6px;
+    height: 2px;
+    right: -1px;
+  }
+  90% {
+    top: auto;
+    bottom: -1px;
+    width: 6px;
+    height: 2px;
+    left: auto;
+    right: 95%;
+  }
+  90.001% {
+    right: auto;
+    left: -1px;
+    width: 2px;
+    height: 6px;
+    top: auto;
+    bottom: -1px;
+  }
+  100% {
+    right: auto;
+    left: -1px;
+    width: 2px;
+    height: 6px;
+    bottom: 95%;
+  }
+}
+@-webkit-keyframes move {
+  0% {
+    top: -1px;
+    left: 0;
+    width: 6px;
+    height: 2px;
+  }
+  40% {
+    top: -1px;
+    left: 95%;
+    width: 6px;
+    height: 2px;
+  }
+  40.001% {
+    left: auto;
+    right: -1px;
+    width: 2px;
+    height: 6px;
+  }
+  50% {
+    left: auto;
+    right: -1px;
+    width: 2px;
+    height: 6px;
+    top: 95%;
+  }
+  50.001% {
+    top: auto;
+    bottom: -1px;
+    width: 6px;
+    height: 2px;
+    right: -1px;
+  }
+  90% {
+    top: auto;
+    bottom: -1px;
+    width: 6px;
+    height: 2px;
+    left: auto;
+    right: 95%;
+  }
+  90.001% {
+    right: auto;
+    left: -1px;
+    width: 2px;
+    height: 6px;
+    top: auto;
+    bottom: -1px;
+  }
+  100% {
+    right: auto;
+    left: -1px;
+    width: 2px;
+    height: 6px;
+    bottom: 95%;
+  }
+}
+.v-charts-component-loading {
+  background-color: #12234f;
+}
+.v-charts-data-empty {
+  background-color: #12234f;
+}
+/*重置table样式*/
+.el-table {
+  width: 100%;
+}
+.el-table th,
+.el-table tr {
+  background: #12234f;
+}
+.el-table td,
+.el-table th.is-leaf {
+  border-bottom: 1px solid #385c81;
+}
+.el-table thead,
+.el-table tbody {
+  color: #fff;
+}
+.el-table__body tr:hover > td {
+  background: #385c81 !important;
+}
